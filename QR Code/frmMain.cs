@@ -15,7 +15,9 @@ namespace QR_Code
 {
     public partial class frmMain : Form
     {
-        List<string> listPorts = new List<string>();
+
+        string targetVid = "VID_05F9";
+        string targetPid = "PID_4204";
         bool deviceStatus = false;
         public frmMain()
         {
@@ -103,6 +105,9 @@ namespace QR_Code
                         if (data.Substring(0, 2) == "ID")
                         {
                             decodeDataMRZ(data);
+                        }
+                        else if (data.Substring(0, 1) == "$")
+                        {
                         }
                         else
                         {
@@ -240,8 +245,8 @@ namespace QR_Code
                 if (!deviceStatus)
                 {
                     btnScan.Enabled = false;
-                    string targetVid = "VID_05F9";
-                    string targetPid = "PID_4204";
+                    btnAuto.Enabled = false;
+                    btnManual.Enabled = false;
 
                     await Task.Run(() =>
                     {
@@ -270,7 +275,7 @@ namespace QR_Code
                                             {
                                                 // Kết nối với cổng COM
                                                 if(portCom.IsOpen) portCom.Close();
-                                                portCom.BaudRate = 115200;
+                                                portCom.BaudRate = 9600;
                                                 portCom.PortName = portName;
                                                 portCom.Encoding = Encoding.UTF8;
                                                 try
@@ -299,6 +304,8 @@ namespace QR_Code
                 else
                 {
                     btnScan.Enabled = true;
+                    btnAuto.Enabled = true;
+                    btnManual.Enabled = true;
                     if (portCom.IsOpen)
                     {
                         bool temp = false;
@@ -348,9 +355,59 @@ namespace QR_Code
 
         private void btnAuto_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string autoCommand = "24532C43534E524D30352C41732C7230310D0A";
 
-            portCom.WriteLine(txtTest.Text.Trim());
-            
+                // Chuyển đổi chuỗi hex thành mảng byte
+                byte[] bytesToSend = Enumerable.Range(0, autoCommand.Length / 2)
+                                               .Select(x => Convert.ToByte(autoCommand.Substring(x * 2, 2), 16))
+                                               .ToArray();
+
+                // Giả sử bạn đã mở cổng serial port (portCom) trước đó
+                if (portCom.IsOpen)
+                {
+                    Console.WriteLine("$S,CSNRM05,As,r01");
+                    portCom.Write(bytesToSend, 0, bytesToSend.Length);
+                }
+                else
+                {
+                    Console.WriteLine("Port is not open.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+
+        }
+
+        private void btnManual_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string manualCommand = "24532C43534E524D30302C41732C7230310D0A";
+
+                // Chuyển đổi chuỗi hex thành mảng byte
+                byte[] bytesToSend = Enumerable.Range(0, manualCommand.Length / 2)
+                                               .Select(x => Convert.ToByte(manualCommand.Substring(x * 2, 2), 16))
+                                               .ToArray();
+
+                // Giả sử bạn đã mở cổng serial port (portCom) trước đó
+                if (portCom.IsOpen)
+                {
+                    Console.WriteLine("$S,CSNRM00,As,r01");
+                    portCom.Write(bytesToSend, 0, bytesToSend.Length);
+                }
+                else
+                {
+                    Console.WriteLine("Port is not open.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
         }
     }
 }

@@ -8,3 +8,4 @@ E:\AIoT\Code\C#\QR Code\QR Code\obj\Debug\QR Code.csproj.GenerateResource.cache
 E:\AIoT\Code\C#\QR Code\QR Code\obj\Debug\QR Code.csproj.CoreCompileInputs.cache
 E:\AIoT\Code\C#\QR Code\QR Code\obj\Debug\QR Code.exe
 E:\AIoT\Code\C#\QR Code\QR Code\obj\Debug\QR Code.pdb
+E:\AIoT\Code\C#\QR Code\QR Code\obj\Debug\QR_Code.Setting.resources

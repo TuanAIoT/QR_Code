@@ -33,7 +33,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnScan = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnManual = new System.Windows.Forms.Button();
             this.btnAuto = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.barlblDeviceStatus = new System.Windows.Forms.ToolStripStatusLabel();
@@ -58,7 +58,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.txtTest = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -77,9 +76,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.txtTest);
             this.panel1.Controls.Add(this.btnScan);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnManual);
             this.panel1.Controls.Add(this.btnAuto);
             this.panel1.Controls.Add(this.statusStrip1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -91,7 +89,7 @@
             // btnScan
             // 
             this.btnScan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnScan.Location = new System.Drawing.Point(559, 3);
+            this.btnScan.Location = new System.Drawing.Point(557, 3);
             this.btnScan.Name = "btnScan";
             this.btnScan.Size = new System.Drawing.Size(132, 59);
             this.btnScan.TabIndex = 3;
@@ -99,15 +97,16 @@
             this.btnScan.UseVisualStyleBackColor = true;
             this.btnScan.Click += new System.EventHandler(this.btnScan_Click);
             // 
-            // button2
+            // btnManual
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(262, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(132, 59);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Manual";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnManual.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManual.Location = new System.Drawing.Point(245, 3);
+            this.btnManual.Name = "btnManual";
+            this.btnManual.Size = new System.Drawing.Size(132, 59);
+            this.btnManual.TabIndex = 2;
+            this.btnManual.Text = "Manual";
+            this.btnManual.UseVisualStyleBackColor = true;
+            this.btnManual.Click += new System.EventHandler(this.btnManual_Click);
             // 
             // btnAuto
             // 
@@ -323,14 +322,6 @@
             this.panel5.Size = new System.Drawing.Size(909, 269);
             this.panel5.TabIndex = 62;
             // 
-            // txtTest
-            // 
-            this.txtTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTest.Location = new System.Drawing.Point(710, 19);
-            this.txtTest.Name = "txtTest";
-            this.txtTest.Size = new System.Drawing.Size(187, 30);
-            this.txtTest.TabIndex = 60;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -361,7 +352,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnScan;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnManual;
         private System.Windows.Forms.Button btnAuto;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel barlblDeviceStatus;
@@ -386,7 +377,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox txtTest;
     }
 }
 

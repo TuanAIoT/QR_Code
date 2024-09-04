@@ -9,6 +9,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{5124DB94-9562-4679-B3F3-AE03879FEAD6}|QR Code\\QR Code.csproj|E:\\AIoT\\Code\\C#\\QR Code\\qr code\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5124DB94-9562-4679-B3F3-AE03879FEAD6}|QR Code\\QR Code.csproj|solutionrelative:qr code\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5124DB94-9562-4679-B3F3-AE03879FEAD6}|QR Code\\QR Code.csproj|E:\\AIoT\\Code\\C#\\QR Code\\qr code\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5124DB94-9562-4679-B3F3-AE03879FEAD6}|QR Code\\QR Code.csproj|solutionrelative:qr code\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5124DB94-9562-4679-B3F3-AE03879FEAD6}|QR Code\\QR Code.csproj|e:\\aiot\\code\\c#\\qr code\\qr code\\frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5124DB94-9562-4679-B3F3-AE03879FEAD6}|QR Code\\QR Code.csproj|solutionrelative:qr code\\frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +26,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmMain.Designer.cs",
+              "DocumentMoniker": "E:\\AIoT\\Code\\C#\\QR Code\\QR Code\\frmMain.Designer.cs",
+              "RelativeDocumentMoniker": "QR Code\\frmMain.Designer.cs",
+              "ToolTip": "E:\\AIoT\\Code\\C#\\QR Code\\QR Code\\frmMain.Designer.cs",
+              "RelativeToolTip": "QR Code\\frmMain.Designer.cs",
+              "ViewState": "AgIAADwBAAAAAAAAAAAowEIBAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T02:34:15.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Setting.cs [Design]",
+              "DocumentMoniker": "E:\\AIoT\\Code\\C#\\QR Code\\QR Code\\Setting.cs",
+              "RelativeDocumentMoniker": "QR Code\\Setting.cs",
+              "ToolTip": "E:\\AIoT\\Code\\C#\\QR Code\\QR Code\\Setting.cs [Design]",
+              "RelativeToolTip": "QR Code\\Setting.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T09:20:55.825Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,7 +61,7 @@
               "RelativeDocumentMoniker": "QR Code\\frmMain.cs",
               "ToolTip": "E:\\AIoT\\Code\\C#\\QR Code\\QR Code\\frmMain.cs",
               "RelativeToolTip": "QR Code\\frmMain.cs",
-              "ViewState": "AgIAAAcBAAAAAAAAAAAgwBgBAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAHwBAAAAAAAAAAAUwH4BAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-28T10:36:24.644Z",
               "EditorCaption": ""
@@ -42,7 +75,8 @@
               "ToolTip": "E:\\AIoT\\Code\\C#\\QR Code\\QR Code\\frmMain.cs [Design]",
               "RelativeToolTip": "QR Code\\frmMain.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T10:35:11.689Z"
+              "WhenOpened": "2024-08-28T10:35:11.689Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

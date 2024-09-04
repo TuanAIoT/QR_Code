@@ -1,0 +1,11 @@
+E:\AIoT\Code\C#\QR Code\QR Code\bin\Release\QR Code.exe.config
+E:\AIoT\Code\C#\QR Code\QR Code\bin\Release\QR Code.exe
+E:\AIoT\Code\C#\QR Code\QR Code\bin\Release\QR Code.pdb
+E:\AIoT\Code\C#\QR Code\QR Code\obj\Release\QR Code.csproj.AssemblyReference.cache
+E:\AIoT\Code\C#\QR Code\QR Code\obj\Release\QR_Code.frmMain.resources
+E:\AIoT\Code\C#\QR Code\QR Code\obj\Release\QR_Code.Properties.Resources.resources
+E:\AIoT\Code\C#\QR Code\QR Code\obj\Release\QR_Code.Setting.resources
+E:\AIoT\Code\C#\QR Code\QR Code\obj\Release\QR Code.csproj.GenerateResource.cache
+E:\AIoT\Code\C#\QR Code\QR Code\obj\Release\QR Code.csproj.CoreCompileInputs.cache
+E:\AIoT\Code\C#\QR Code\QR Code\obj\Release\QR Code.exe
+E:\AIoT\Code\C#\QR Code\QR Code\obj\Release\QR Code.pdb
